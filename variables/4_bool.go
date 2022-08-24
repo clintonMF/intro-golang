@@ -7,5 +7,5 @@ func main() {
 	str2 := "he is here"
 	out := str1 == str2
 
-	fmt.Println(out)
+	fmt.Println(out) // output false
 }

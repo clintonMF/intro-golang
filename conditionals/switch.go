@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-// switch case syntax
+// switch case with expression syntax
 // switch expression {
 // case value1:
 // 	statement(s)
@@ -34,3 +34,13 @@ func main() {
 		fmt.Println("the value for today is invalid")
 	}
 }
+
+// switch case without expression syntax
+// switch {
+// case expression1==value1:
+// 	statement(s)
+// case expression2==value2:
+// 	statement(s)
+// default:
+// 	statement(s)    
+// }

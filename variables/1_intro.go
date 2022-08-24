@@ -1,3 +1,6 @@
+//this package gives an introduction to ways of naming variables in
+// golang
+
 package main
 
 import "fmt"
