@@ -21,3 +21,6 @@
 ***NOTE:*** there are exceptions to the given road maps (i.e some few instances where you are to go through the file before going through a folder but the road map says otherwise) such exceptions would be noted in the extra **README.md** files in the folders. So do well to read them.
 
 
+## How to run the codes
+**NOTE** this folder/repository is not a GO module.
+To run each file go into the directory where the file is located and run **go run name_of_file**
