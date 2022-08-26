@@ -23,4 +23,4 @@
 
 ## How to run the codes
 **NOTE** this folder/repository is not a GO module.
-To run each file go into the directory where the file is located and run **go run name_of_file**
+- To run each file go into the directory where the file is located and run **go run name_of_file**
