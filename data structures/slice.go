@@ -8,6 +8,13 @@
 // tored in the slice.
 // var slicename []T
 
+// Components of Slice
+// A slice contains three components:
+
+// Pointer: The pointer is used to points to the first element of the array that is accessible through the slice. Here, it is not necessary that the pointed element is the first element of the array.
+// Length: The length is the total number of elements present in the array.
+// Capacity: The capacity represents the maximum size upto which it can expand.
+
 package main
 
 import "fmt"
@@ -33,6 +40,7 @@ func b() {
 // Length and Capacity of a Slice
 // Slice has two properties regarding the number of elements present  in
 // slice (length) and the number of elements it can accommodate (capacity).
+// func make([]T, len, cap)
 
 func c() {
 	numbers := make([]int, 5, 10)
@@ -50,9 +58,33 @@ func d() {
 	fmt.Println(numbers)
 }
 
+// show how to modify a slice
+func e() {
+	arr := [6]int{1, 2, 3, 4, 5, 6}
+	slc := arr[:4]
+
+	// before modification
+	fmt.Println("before modification")
+	fmt.Println("the array ", arr)
+	fmt.Println("the slice ", slc)
+
+	//after modification
+	slc[0] = 2
+	slc[1] = 4
+	slc[2] = 6
+	slc[3] = 8
+
+	// after modification
+	fmt.Println("after modification")
+	fmt.Println("the array ", arr)
+	fmt.Println("the slice ", slc)
+
+}
+
 func main() {
 	a()
 	b()
 	c()
 	d()
+	e()
 }
